@@ -4,7 +4,7 @@ using namespace std;
 /***************************************************************
  * Programmer: Josiah St Bernard
  * Date: February 25th, 2025
- * Purpose: Header for a doubly linked class
+ * Purpose: Main for doubly linked list
  * Input: None
  * Output: None
  **************************************************************/

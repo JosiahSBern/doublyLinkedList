@@ -3,7 +3,7 @@
 /***************************************************************
  * Programmer: Josiah St Bernard
  * Date: February 11th, 2025
- * Purpose: Header for a doubly linked class
+ * Purpose: Implementation of Doubly Linekd List Header
  * Input: None
  * Output: None
  **************************************************************/
@@ -217,6 +217,7 @@ typename List<T>::Iterator List<T>::Iterator::operator++(int)
     return temp;
 }
 
+// Decrement operator
 template <class T>
 typename List<T>::Iterator List<T>::Iterator::operator--(int)
 {
@@ -229,7 +230,7 @@ typename List<T>::Iterator List<T>::Iterator::operator--(int)
 template <class T>
 T &List<T>::Iterator::operator*() const
 {
-    return current->info;
+    return current->info; 
 }
 
 template <class T>
@@ -247,7 +248,6 @@ bool List<T>::Iterator::operator!=(const Iterator &other) const
 // Traversals
 
 // Front to Back
-
 template <class T>
 typename List<T>::Iterator List<T>::begin()
 {
@@ -260,6 +260,7 @@ typename List<T>::Iterator List<T>::end()
     return Iterator(NULL);
 }
 
+// Back to Front
 template <class T>
 typename List<T>::Iterator List<T>::rbegin()
 {

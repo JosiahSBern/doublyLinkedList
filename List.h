@@ -78,7 +78,7 @@ public:
         Iterator operator++(int); // Post i++
 
         // Decrement
-        Iterator operator--(int); // Post i++
+        Iterator operator--(int); // Post i--
 
         bool operator==(const Iterator &) const;
         bool operator!=(const Iterator &) const;
@@ -91,6 +91,5 @@ public:
     Iterator rbegin();
     Iterator rend();
 };
-#include "List.cpp"
 
 #endif
